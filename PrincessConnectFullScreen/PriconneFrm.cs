@@ -22,6 +22,10 @@ namespace Hwnd
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 
+        [DllImport("user32.dll", EntryPoint = "SetWindowPos")]
+        public static extern IntPtr SetWindowPos(IntPtr hWnd, int hWndInsertAfter, int x, int Y, int cx, int cy, int wFlags);
+
+
         private const int SWP_NOSIZE = 0x0001;
         private const int SWP_NOZORDER = 0x0004;
         private const int SWP_SHOWWINDOW = 0x0040;
@@ -31,6 +35,7 @@ namespace Hwnd
         private const int WS_MINIMIZE = 0x20000000;
         private const int WS_MAXIMIZE = 0x1000000;
         private const int WS_SYSMENU = 0x80000;
+
 
         private const int SW_MAXIMIZE = 3;
         private const int SW_RESTORE = 9;
@@ -106,16 +111,13 @@ namespace Hwnd
 
             int newStyle = (int)winLong;
 
-            if ((((int)winLong) & WS_DLGFRAME) != 0)
-            {
-                MessageBox.Show(MSG_MESSAGE_ALREADY_WINDOW, MSG_TITLE_ALREADY_WINDOW, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
 
             newStyle |= (WS_DLGFRAME | WS_MINIMIZE | WS_MAXIMIZE | WS_SYSMENU);
 
             SetWindowLong(priconHwnd, (int)WindowLongFlags.GWL_STYLE, (int)newStyle);
             ShowWindow(priconHwnd, SW_RESTORE);
+            SetWindowPos(priconHwnd, 0, 0, 0, 960, 570, SWP_NOZORDER | SWP_SHOWWINDOW);
+
         }
 
     }

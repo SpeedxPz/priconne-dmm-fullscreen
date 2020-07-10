@@ -79,7 +79,7 @@
             this.MinimizeBox = false;
             this.Name = "PrinconneFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Priconne (DMM) Fullscreen v1.0";
+            this.Text = "Priconne (DMM) Fullscreen v1.2";
             this.ResumeLayout(false);
             this.PerformLayout();
 
