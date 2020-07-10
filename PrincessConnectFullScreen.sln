@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrincessConnectFullScreen", "PrincessConnectFullScreen\PrincessConnectFullScreen.csproj", "{C99C9327-7F85-40AF-AB74-59F28466352E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C99C9327-7F85-40AF-AB74-59F28466352E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C99C9327-7F85-40AF-AB74-59F28466352E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C99C9327-7F85-40AF-AB74-59F28466352E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C99C9327-7F85-40AF-AB74-59F28466352E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29F42DE9-DE3E-4CD3-8E66-3675D362B149}
+	EndGlobalSection
+EndGlobal
