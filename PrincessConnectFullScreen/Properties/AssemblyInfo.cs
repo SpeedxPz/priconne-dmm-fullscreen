@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Hwnd")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("PrincessConnectFullscreen")]
+[assembly: AssemblyDescription("Make Prinncess Connect Re:Dive (DMM) can go fullscreen")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Hwnd")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCompany("Takumi Producer")]
+[assembly: AssemblyProduct("PrincessConnectFullscreen")]
+[assembly: AssemblyCopyright("Copyright © Takumi Producer 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
